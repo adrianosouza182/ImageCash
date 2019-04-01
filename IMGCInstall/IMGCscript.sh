@@ -8,7 +8,7 @@ COIN_CLI_NAME='imgcash-cli'
 COIN_CLI='/usr/local/bin/imgcash-cli'
 COIN_REPO='https://github.com/mceme/ImageCash/releases/download/1.10/imgcash-linux86x64.tar.xz'
 COIN_NAME='Imgcash'
-COIN_PORT=6899
+COIN_PORT=6888
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -181,6 +181,7 @@ maxconnections=64
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
+rcpport=6898
 addnode=23.101.61.34:6888
 addnode=104.238.171.10:6888
 addnode=45.76.47.138:6888
